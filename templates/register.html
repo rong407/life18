@@ -1,0 +1,23 @@
+<!-- templates/register.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ลงทะเบียน</title>
+</head>
+<body>
+  <h2>ลงทะเบียนผู้ใช้</h2>
+  <form method="post" action="/submit">
+    <label>ชื่อจาก LINE: </label>
+    <input type="text" name="displayName" value="{{ name }}" readonly><br><br>
+
+    <label>ชื่อในกลุ่ม OpenChat:</label>
+    <input type="text" name="nickname" required><br><br>
+
+    <label>เบอร์โทร:</label>
+    <input type="tel" name="phone"><br><br>
+
+    <input type="hidden" name="userId" value="{{ userId }}">
+    <button type="submit">ลงทะเบียน</button>
+  </form>
+</body>
+</html>
