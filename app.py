@@ -4,9 +4,9 @@ import requests
 
 app = Flask(__name__)
 
-CLIENT_ID = "1651234567"
-CLIENT_SECRET = "abc123456xyz"
-REDIRECT_URI = "https://yourdomain.com/callback"
+CLIENT_ID = "2007368596"
+CLIENT_SECRET = "4b56254304591d555d7369e618b1279f"
+REDIRECT_URI = "https://life18.onrender.com/callback"
 
 @app.route("/callback")
 def callback():
